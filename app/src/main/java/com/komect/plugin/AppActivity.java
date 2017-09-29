@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
-import com.komect.mylibrary.User;
+//import com.komect.mylibrary.User;
 import com.komect.plugin.databinding.ActivityAppBinding;
 
 public class AppActivity extends AppCompatActivity {
