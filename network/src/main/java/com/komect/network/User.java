@@ -1,4 +1,4 @@
-package com.komect.mylibrary;
+package com.komect.network;
 
 import org.litepal.crud.DataSupport;
 

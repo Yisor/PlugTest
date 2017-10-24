@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.komect.mylibrary">
+    package="com.komect.network">
 
-    <application android:allowBackup="true">
-        <activity android:name=".TestActivity"></activity>
+    <application>
+        <activity android:name="com.komect.network.TestActivity"></activity>
     </application>
 
 </manifest>

@@ -1,11 +1,11 @@
-package com.komect.mylibrary;
+package com.komect.network;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import com.komect.mylibrary.databinding.ActivityTestBinding;
+import com.komect.network.databinding.ActivityTestBinding;
 
 public class TestActivity extends AppCompatActivity {
 
@@ -19,8 +19,6 @@ public class TestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_test);
         user = new User("测试", 18);
-        //mHandle = new UserHandle(user);
-        //binding.setHandle(mHandle);
         binding.setUser(user);
 
         Button button = (Button) findViewById(R.id.btn_calculate);
@@ -28,8 +26,6 @@ public class TestActivity extends AppCompatActivity {
             @Override public void onClick(View view) {
                 int sum = 10 + user.getAge();
                 user.setAge(sum);
-                //mHandle.setUser(user);
-                //binding.setHandle(mHandle);
                 binding.setUser(user);
             }
         });

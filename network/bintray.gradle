@@ -1,52 +1,20 @@
-apply plugin: 'com.android.library'
-
-android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
-
-    defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
-    }
-
-    dataBinding {
-        enabled = true
-    }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-    }
-}
-
-apply from: 'fat-aar.gradle'
-apply from: 'debug.gradle'
-
-dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'org.litepal.android:core:1.6.0'
-}
-
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 // 这个version是区分library版本的，因此当我们需要更新library时记得修改这个version
 version = "1.0.0"
-def siteUrl = 'https://github.com/Yisor/PlugTest.git'
+// 项目主页
+def siteUrl = 'https://github.com/Yisor/PlugTest'
+// Git仓库地址
 def gitUrl = 'git@github.com:Yisor/PlugTest.git'
 
-group = "com.komect.mylibrary"
+group = "xyz.eyow"
 install {
     repositories.mavenInstaller {
         pom {
             project {
                 packaging 'aar'
-                name 'mylibrary'
-                description '模块依赖测试'
+                name 'network' // 可选，项目名称
+                description '网络模块依赖测试' // 可选，项目描述
                 url siteUrl
 
                 licenses {
@@ -108,8 +76,8 @@ bintray {
 
     configurations = ['archives']
     pkg {
-        repo = "maven"
-        name = "mylibrary"
+        repo = "maven" // 上传到maven库。（注意，如报404错误，请在bintray创建一个仓库，这里填改成你创建的仓库的名字，
+        name = "network" // 发布到Bintray上的项目名字
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]

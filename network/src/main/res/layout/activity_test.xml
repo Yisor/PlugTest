@@ -5,11 +5,11 @@
 
         <variable
             name="handle"
-            type="com.komect.mylibrary.UserHandle"/>
+            type="com.komect.network.UserHandle"/>
 
         <variable
             name="user"
-            type="com.komect.mylibrary.User"/>
+            type="com.komect.network.User"/>
     </data>
 
     <LinearLayout

@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "26.0.2"
+    buildToolsVersion "25.0.2"
 
     defaultConfig {
         applicationId "xyz.eyow.sdk"
@@ -36,11 +36,5 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support:multidex:1.0.1'
-    compile project(':app')
-//    compile(name: 'mylibrary-release', ext: 'aar')
-//    compile(name: 'app-release', ext: 'aar')
-//    compile 'com.zhy:autolayout:1.4.3'
-//    compile 'org.litepal.android:core:1.6.0'
 
 }
