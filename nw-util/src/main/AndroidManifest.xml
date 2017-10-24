@@ -3,7 +3,6 @@
     package="xyz.eyow.sdk">
 
     <application
-        android:name=".TestApplication"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/SDKAppTheme">
