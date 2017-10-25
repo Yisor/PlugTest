@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import com.google.gson.Gson;
 import com.komect.network.app.activity.MainActivity;
-import com.komect.network.app.activity.OrderInfoActivity;
 import com.komect.plugin.databinding.ActivityAppBinding;
 
 public class AppActivity extends AppCompatActivity {

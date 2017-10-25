@@ -32,6 +32,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.1'
 //    compile project(':network')
 //    compile 'xyz.eyow:network:1.0.0'
-    compile 'xyz.eyow:app:1.0.0'
+    compile 'xyz.eyow:app:1.0.1'
 }
 
